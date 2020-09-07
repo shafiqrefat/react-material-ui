@@ -7,7 +7,8 @@ const Post = (props) => {
         border: '1px solid gray',
         margin: '10px',
         padding: '10px',
-        borderRadius: '10px'
+        borderRadius: '10px',
+        backgroundColor: 'orange',
     }
     return (
         <div style={postStyle}>
@@ -16,7 +17,6 @@ const Post = (props) => {
             <h3> Post : {title}</h3>
             <h5> Body : {body}</h5>
             <button><Link to={`/post/${id}`}>See More</Link></button>
-            <p><Link to={`/comment/${id}`}>See More</Link></p>
         </div>
     );
 };
