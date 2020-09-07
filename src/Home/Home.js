@@ -8,9 +8,16 @@ const Home = () => {
         .then(response => response.json())
         .then(data => setPosts(data));
     }, [])
+    const totalPostStyle = {
+        textAlign: 'center',
+        backgroundColor:'gray',
+        margin: '10px',
+        padding: '10px',
+        borderRadius: '10px',
+    }
     return (
         <div>
-        <h1>Total Post: {posts.length}</h1>
+        <h1 style={totalPostStyle}>Total Post: {posts.length}</h1>
         {
           posts.map(post => <Post post={post}></Post>)
         }

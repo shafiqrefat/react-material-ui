@@ -19,8 +19,15 @@ const PostDetail = () => {
         .then(response => response.json())
         .then(data =>setComments(data))
     }, [])
+
+    const postStyle = { 
+        margin: '10px',
+        padding: '10px',
+        borderRadius: '10px',
+        textAlign: 'center'
+    }
     return (
-        <div>
+        <div style={postStyle}>
             <h1>Title : {post.title}</h1>
             <h3>Body : {post.body}</h3>
             
