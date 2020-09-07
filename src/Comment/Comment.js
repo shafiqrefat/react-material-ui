@@ -18,14 +18,16 @@ const Comment = (props) => {
                 <Avatar src={`https://randomuser.me/api/portraits/men/75.jpg`} alt="" />
             </ListItemAvatar>
             <ListItemText style={commentStyle}
-                primary= {name}
-                secondary={
+                primary={
                     <>
-                        <Typography component="span" variant="body2" color="textPrimary">
-                            {email}
-                        </Typography> <br/>
-                        <Typography component="span" variant="body2" color="textPrimary">
-                            {body}
+                        <Typography component="p" variant="body2" color="textPrimary">
+                            <h3>Name : {name}</h3>
+                        </Typography>
+                        <Typography component="p" variant="body2" color="textPrimary">
+                            <h3>Email : {email}</h3>
+                        </Typography>
+                        <Typography component="p" variant="body2" color="textPrimary">
+                        <h3>Body : {body}</h3>
                         </Typography>
                     </>
                 }
